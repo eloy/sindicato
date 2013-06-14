@@ -5,7 +5,7 @@ gem 'mysql2'
 gem 'jquery-rails'
 gem 'capistrano'
 gem 'bcrypt-ruby', '~> 3.0.0'
-
+gem 'figaro'                                      # Manage configurations
 gem 'turbo-sprockets-rails3'                      # Fast assets precompilation in production
 gem 'roo', git: 'git://github.com/Empact/roo.git' # spreadsheet support
 
