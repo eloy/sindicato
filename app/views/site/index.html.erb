@@ -1,0 +1,32 @@
+<h1 class="page-header">Generar ficheros de Suma</h1>
+<%= form_tag(export_path, method: :post, multipart: true) do %>
+
+  <div class="field">
+    <label>Año de cargo</label>
+    <%= text_field_tag 'export[ano_de_cargo]', Date.today.year %>
+  </div>
+
+  <div class="field">
+    <label>Año ejercicio</label>
+    <%= text_field_tag 'export[ano_ejercicio]', Date.today.year %>
+  </div>
+
+  <div class="field">
+    <label>Concepto</label>
+    <%= text_field_tag 'export[detalle_2]' %>
+  </div>
+
+  <div class="field">
+    <label>Precio</label>
+    <%= text_field_tag 'export[precio]' %>
+  </div>
+
+  <div class="field">
+    <label>Fichero</label>
+    <%= file_field_tag 'source_file' %>
+  </div>
+
+
+
+  <%= submit_tag :exportar, class: 'btn btn-primary' %>
+<% end %>
