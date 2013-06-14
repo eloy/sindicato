@@ -108,6 +108,12 @@ class SindicatoExporter
         end
 
         if value
+
+          # Remove overflow
+          if value.is_a? String
+            value = value.slice(0, f[:length])
+          end
+
           if f[:type] == :number
             value = value.to_s.rjust(f[:length], '0')
           else
