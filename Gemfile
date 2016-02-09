@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.10'
 gem 'jquery-rails'
 gem 'capistrano'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'figaro'                                      # Manage configurations
 gem 'turbo-sprockets-rails3'                      # Fast assets precompilation in production
 gem 'roo', git: 'git://github.com/Empact/roo.git' # spreadsheet support
+gem 'json', '~> 1.8.3'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -24,7 +25,7 @@ end
 group :development do
   gem 'letter_opener'
   gem 'foreman'
-  gem 'thin'
+#  gem 'thin'
   gem 'better_errors'
   gem 'binding_of_caller'
 end
@@ -32,9 +33,9 @@ end
 group :test do
   gem 'simplecov', require: false
   gem 'rspec'
-  gem 'capybara'
-  gem 'poltergeist'
-  gem 'shoulda-matchers'
-  gem 'factory_girl'
-  gem 'database_cleaner'
+  # gem 'capybara'
+  # gem 'poltergeist'
+  # gem 'shoulda-matchers'
+  # gem 'factory_girl'
+  # gem 'database_cleaner'
 end
