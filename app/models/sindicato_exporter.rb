@@ -92,7 +92,7 @@ class SindicatoExporter
     end
   end
 
-  COLUMNS = [:numero_valor, :nombre_sujeto_pasivo, :tipo_de_calle,
+  COLUMNS = [:nombre_sujeto_pasivo, :tipo_de_calle,
     :nombre_de_calle, :numero, :descripcion,
     :codigo_postal, :codigo_municipio, :municipio,
     :codigo_provincia, :provincia,
