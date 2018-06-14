@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'mysql2', '~> 0.3.10'
+# gem 'mysql2', '~> 0.3.10'
 gem 'jquery-rails'
 gem 'capistrano'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'figaro'                                      # Manage configurations
 gem 'turbo-sprockets-rails3'                      # Fast assets precompilation in production
-gem 'roo', git: 'git://github.com/Empact/roo.git' # spreadsheet support
+gem 'roo'
+gem 'roo-xls'
 gem 'json', '~> 1.8.3'
 
 # Gems used only for assets and not required
