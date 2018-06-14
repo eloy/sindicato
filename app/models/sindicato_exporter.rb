@@ -70,7 +70,7 @@ class SindicatoExporter
       "Concepto: #{row[:total_tahullas]} tahullas, a razon de #{precio_tahulla} euros por tahulla."
     end
 
-    field name: :descripcion_2, length: 75 do |row|
+    field name: :descripcion_2, length: 77 do |row|
       parcelas_str = row[:parcelas].gsub(' ', '').chomp
       if parcelas_str.present?
         "POLÍG/PARC: #{parcelas_str}"
@@ -79,6 +79,9 @@ class SindicatoExporter
       end
     end
 
+    field name: :detalle_2, length: 73 do |row|
+      opt[:detalle_2]
+    end
   end
 
   def debug_fields
